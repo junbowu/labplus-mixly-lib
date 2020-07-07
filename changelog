@@ -1,0 +1,17 @@
+﻿v0.995.3
+1、设备支持：duinoplusbox，w1, w9, arduinoBox。
+2、调整语句，加入除了arduinoBox外的英文支持。
+v0.995.4
+1、新增矩阵命令。
+2、调整Mp3模块命令。
+V0.995.5
+1.replace all "getTitleValue" with "getFieldValue".
+2.replace all "appendTitle" with "appendField".
+3.replace unicode "\u" with chinese character in hardware\..\board.txt in order to match the menu in arduino IDE.
+4.block "ArduinoBox".
+5.add new ultrsonic block for w1 w9
+6.correct return error of temp and hum, and "wire.begin()"
+7.mp3 status corrected.
+8.add mp3 volumn block.
+V0.995.6
+1.add time block for joint.

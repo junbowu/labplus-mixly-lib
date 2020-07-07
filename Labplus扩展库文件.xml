@@ -1,0 +1,671 @@
+<!-- type="company" block="block/labplus/labplus.blocks.mixly.min.js" generator="generator/labplus/labplus.generators.mixly.min.js" lib="" hardware="hardware/labplus"   media="media/duinoplusbox" language="language/labplus" pin="companypin/labplus"-->
+
+<script type="text/javascript" src="../../blocks/company/labplus.blocks.mixly.min.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/labplus.generators.mixly.min.js"></script>
+<category id="Labplus" name="Labplus" colour="120">
+	<category id="catDuinoplusBox" name="创客中级实验箱" colour="160">
+		<block type="duinoplus_temperature"></block>
+			<block type="duinoplus_light">
+				<value name="PIN">
+					<shadow type="duinoplus_analog">
+					<field name="PIN">A1</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_sound">
+			<value name="PIN">
+				<shadow type="duinoplus_analog">
+					<field name="PIN">A2</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_humaninfrared">
+			<value name="PIN">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">7</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_sliding">
+			<value name="PIN">
+				<shadow type="duinoplus_analog">
+					<field name="PIN">A0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_button">
+			<value name="PIN">
+				<shadow type="duinoplus_btn"></shadow>
+			</value>
+		</block>
+		<block type="duinoplus_led">
+			<value name="PIN">
+				<shadow type="duinoplus_pwm">
+					<field name="PIN">9</field>
+				</shadow>
+			</value>
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer">
+			<value name="PIN">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">10</field>
+				</shadow>
+			</value>
+			<value name="FREQUENCY">
+				<shadow type="tone_notes"></shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer2">
+			<value name="PIN">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">10</field>
+				</shadow>
+			</value>
+			<value name="FREQUENCY">
+				<shadow type="tone_notes"></shadow>
+			</value>
+			<value name="DURATION">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer3">
+			<value name="PIN">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">10</field>
+				</shadow>
+			</value>
+			<value name="FREQUENCY">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+			<value name="DURATION">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer4">
+			<value name="PIN">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">10</field>
+				</shadow>
+			</value>
+		</block>	
+		<block type="duinoplus_digitalled_init">    
+			<value name="PIN_CS">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">8</field>
+				</shadow>
+			</value>
+			<value name="PIN_DI">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">11</field>
+				</shadow>
+			</value>
+			<value name="PIN_CLK">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">13</field>
+				</shadow>
+			</value>
+		</block> 
+		<block type="duinoplus_digitalled_display">
+			<value name="DIGITAL_LED_NUM1">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block> 
+		<block type="duinoplus_digitalled_display1">
+			<value name="DIGITAL_LED_NUM">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_digitalled_clear">		
+		</block>
+		<block type="duinoplus_matrix_init">    
+			<value name="PIN_CS">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">12</field>
+				</shadow>
+			</value>
+			<value name="PIN_DI">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">11</field>
+				</shadow>
+			</value>
+			<value name="PIN_CLK">
+				<shadow type="duinoplus_digital">
+					<field name="PIN">13</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_matrix_draw_pixel">
+			<value name="PIXEL_X">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="PIXEL_Y">
+				<shadow type="matrix_x_y"></shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_display_string">
+			<value name="PIXEL_X">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="PIXEL_Y">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="CHAR_VAR">
+				<shadow type="text">
+					<field name="TEXT">A</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_draw_line">
+			<value name="LINE">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="LINE_DAT">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_draw_column">
+			<value name="LINE">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="LINE_DAT">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_clear">		
+		</block>
+		<block type="duinoplus_cal_reverse">
+			<value name="Num">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="NumLen">
+				<shadow type="math_number">
+					<field name="NUM">8</field>
+				</shadow>
+			</value>	
+		</block>
+	</category>
+	<category id="catJoint" name="乐动魔块高级套装" colour="200">
+		<block type="joint_getButtonVal"></block>
+		<block type="joint_getTiltSwitchVal"></block>
+		<block type="joint_getInfraredVal"></block>
+		<block type="joint_getSildeSwitchVal"></block>
+		<block type="joint_getMotionTriggerVal"></block>
+		<block type="joint_getSoundTriggerVal"></block>
+		<block type="joint_getTouchButtonVal"></block>
+		<block type="joint_getMagneticSwitchVal"></block>
+		<block type="joint_getLimitSwitchVal"></block>
+		<block type="joint_getLightVal"></block>
+		<block type="joint_getSlideVal"></block>
+		<block type="joint_getRotateVal"></block>
+		<block type="joint_getLowLightVal"></block>
+		<block type="joint_getResistanceVal"></block>
+		<block type="joint_getWaterVal"></block>
+		<block type="joint_getFlameSensorVal"></block>
+		<block type="joint_getTemperatureVal"></block>
+		<block type="joint_getHumTemp"></block>
+		<block type="joint_getUltrasonic0"></block>
+		<block type="joint_getUltrasonic"></block>
+		<block type="joint_setBuzzer"></block>
+		<block type="joint_setLed"></block>
+		<block type="joint_setStripLed"></block>
+		<block type="joint_setVibrationMotor"></block>
+		<block type="joint_setElectromagnet"></block>
+		<block type="joint_setRelay"></block>
+		<block type="joint_setFan"></block>
+		<block type="joint_setMotor"></block>
+		<block type="joint_setMotorDC">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+		</block>	  
+		<block type="joint_setRGBLED">
+			<value name="R">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+			<value name="G">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="B">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setRecOn"></block>
+		<block type="joint_setRecOff"></block>
+		<block type="joint_setRec">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setMidi1">
+			<value name="CHS">
+				<shadow type="joint_melodic">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setMidi2">
+			<value name="CHS">
+				<shadow type="joint_percussion">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_playNote1">
+			<value name="NOTE">
+				<shadow type="math_number">
+					<field name="NUM">64</field>
+				</shadow>
+			</value>
+			<value name="VOL">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_stopPlay"></block>
+		<block type="joint_playMp3">
+			<value name="Num">
+				<shadow type="joint_musiclist">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_loopMp3">
+			<value name="Num">
+				<shadow type="joint_musiclist">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setMp3"></block>
+		<block type="joint_setMp3Volume">
+			<value name="VOL">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_getMp3Stat"></block>
+		<block type="joint_setDigit">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setDigitOff"></block>
+		<block type="joint_setLcdNum">
+			<value name="num0">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setLcdTime">
+			<value name="hour">
+				<shadow type="math_number">
+					<field name="NUM">12</field>
+				</shadow>
+			</value>
+			<value name="min">
+				<shadow type="math_number">
+					<field name="NUM">14</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_closeLcd"></block>
+		<block type="joint_getColor"></block>
+		<block type="joint_hsvColor"></block>
+		<block type="joint_rgbColor"></block>
+		<block type="joint_defineLightBar">
+			<value name="PIN">
+				<shadow type="joint_digital_pin">
+				</shadow>
+			</value>
+			<value name="AMOUNT">
+				<shadow type="math_number">
+					<field name="NUM">12</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setLightBar">
+			<value name="PIN">
+				<shadow type="joint_digital_pin">
+				</shadow>
+			</value>
+			<value name="NUMBER">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="RED">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+			<value name="GREEN">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="BLUE">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setLightBarPalette">
+			<value name="PIN">
+				<shadow type="joint_digital_pin">
+				</shadow>
+			</value>
+			<value name="NUMBER">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="COLOR">
+				<shadow type="colorbar">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_sendLightBar">
+			<value name="PIN">
+				<shadow type="joint_digital_pin">
+				</shadow>
+			</value>
+		</block>
+		<block type="joint_setMatrixCoorXY">
+		<value name="CoorX">
+		  <shadow type="math_number">
+		    <field name="NUM">0</field>
+		  </shadow>
+		</value>
+		<value name="CoorY">
+		  <shadow type="math_number">
+		    <field name="NUM">0</field>
+		  </shadow>
+		</value>
+		<value name="stat">
+		  <shadow type="inout_highlow">
+		  </shadow>
+		</value>
+	  </block>
+	  <block type="joint_setMatrixCursor">
+		<value name="CoorX">
+		  <shadow type="math_number">
+		    <field name="NUM">0</field>
+		  </shadow>
+		</value>
+		<value name="CoorY">
+		  <shadow type="math_number">
+		    <field name="NUM">0</field>
+		  </shadow>
+		</value>
+	  </block>
+	  <block type="joint_setMatrixChar">
+		<value name="Char">
+		  <shadow type="text_char"></shadow>
+		</value>
+	  </block>
+	  <block type="joint_clearMatrix"></block>
+	  <block type="joint_setMatrix">
+		<value name="row0">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row1">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row2">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row3">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row4">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row5">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row6">
+			<block type="DotMatrixRow"></block>
+		</value>
+		<value name="row7">
+			<block type="DotMatrixRow"></block>
+		</value>
+	  </block>
+	  <block type="joint_writeToMatrix"></block>
+	  <block type="joint_settime">
+		<value name="hour">
+			<shadow type="joint_curHour"></shadow>
+		</value>
+		<value name="minute">
+			<shadow type="joint_curMinute"></shadow>
+		</value>
+		<value name="second">
+			<shadow type="joint_curSecond"></shadow>
+		</value>
+		<value name="week_day">
+			<shadow type="joint_weekDay"></shadow>
+		</value>
+		<value name="day">
+			<shadow type="joint_curDay"></shadow>
+		</value>
+		<value name="month">
+			<shadow type="joint_curMonth"></shadow>
+		</value>
+		<value name="year">
+			<shadow type="joint_curYear"></shadow>
+		</value>
+	</block>
+	<block type="joint_gettime"></block>
+	</category>	
+	<category id="catJointlite" name="乐动魔块中级套装" colour="200">
+		<block type="jointlite_getButtonVal"></block>
+		<block type="jointlite_getTiltSwitchVal"></block>
+		<block type="jointlite_getInfraredVal"></block>
+		<block type="jointlite_getSildeSwitchVal"></block>
+		<block type="jointlite_getMotionTriggerVal"></block>
+		<block type="jointlite_getSoundTriggerVal"></block>
+		<block type="jointlite_getTouchButtonVal"></block>
+		<block type="jointlite_getMagneticSwitchVal"></block>
+		<block type="jointlite_getLimitSwitchVal"></block>
+		<block type="jointlite_getLightVal"></block>
+		<block type="jointlite_getSlideVal"></block>
+		<block type="jointlite_getRotateVal"></block>
+		<block type="jointlite_getLowLightVal"></block>
+		<block type="jointlite_getResistanceVal"></block>
+		<block type="jointlite_getWaterVal"></block>
+		<block type="jointlite_getFlameSensorVal"></block>
+		<block type="jointlite_getTemperatureVal"></block>
+		<block type="jointlite_getUltrasonic"></block>
+		<block type="jointlite_setBuzzer"></block>
+		<block type="jointlite_setLed"></block>
+		<block type="jointlite_setStripLed"></block>
+		<block type="jointlite_setVibrationMotor"></block>
+		<block type="jointlite_setElectromagnet"></block>
+		<block type="jointlite_setRelay"></block>
+		<block type="jointlite_setFan"></block>
+		<block type="jointlite_setMotor"></block>
+		<block type="jointlite_setMotorDC">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+		</block>	  
+		<block type="jointlite_setRGBLED">
+			<value name="R">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+			<value name="G">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="B">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_setRecOn"></block>
+		<block type="jointlite_setRecOff"></block> 
+		<block type="jointlite_setRec">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_setMidi1">
+			<value name="CHS">
+				<shadow type="joint_melodic">
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_setMidi2">
+			<value name="CHS">
+				<shadow type="joint_percussion">
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_playNote1">
+			<value name="NOTE">
+				<shadow type="math_number">
+					<field name="NUM">64</field>
+				</shadow>
+			</value>
+			<value name="VOL">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_stopPlay"></block>
+		<block type="jointlite_playMp3">
+			<value name="Num">
+				<shadow type="joint_musiclist">
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_loopMp3">
+			<value name="Num">
+				<shadow type="joint_musiclist">
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_setMp3"></block>
+		<block type="jointlite_setMp3Volume">
+			<value name="VOL">
+				<shadow type="math_number">
+					<field name="NUM">10</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="jointlite_getMp3Stat"></block>
+		
+	</category>	
+	<!-- <category id="catArduinoBox" name="创客中级实验箱（教师端）" colour="240"> -->
+	  <!-- <block type="arduinobox_getTemp"></block> -->
+	  <!-- <block type="arduinobox_getLightVal"></block> -->
+	  <!-- <block type="arduinobox_getSoundVal"></block> -->
+	  <!-- <block type="arduinobox_getSlidePotVal"></block> -->
+	  <!-- <block type="arduinobox_getPullPotVal"></block> -->
+	  <!-- <block type="arduinobox_getIRremoteVal"></block> -->
+	  <!-- <block type="arduinobox_getButtonVal"></block> -->
+	  <!-- <block type="arduinobox_setBuzzer"></block> -->
+	  <!-- <block type="arduinobox_setRGBLed"> -->
+        <!-- <value name="VALUE"> -->
+          <!-- <shadow type="math_number"> -->
+            <!-- <field name="NUM">0</field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	  <!-- <block type="arduinobox_setLed"></block> -->
+	  <!-- <block type="arduinobox_setRelay"></block> -->
+	  <!-- <block type="arduinobox_setMotor"> -->
+	    <!-- <value name="SPEED"> -->
+          <!-- <shadow type="math_number"> -->
+            <!-- <field name="NUM">0</field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	  <!-- <block type="arduinobox_setLCD"> -->
+        <!-- <value name="LINE1"> -->
+          <!-- <shadow type="text"> -->
+            <!-- <field name="TEXT"></field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+        <!-- <value name="LINE2"> -->
+          <!-- <shadow type="text"> -->
+            <!-- <field name="TEXT"></field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	  <!-- <block type="arduinobox_setLCDLine"> -->
+        <!-- <value name="CONTENT"> -->
+          <!-- <shadow type="text"> -->
+            <!-- <field name="TEXT"></field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	  <!-- <block type="arduinobox_setMatrixLED"> -->
+        <!-- <value name="CONTENT"> -->
+          <!-- <shadow type="text"> -->
+            <!-- <field name="TEXT"></field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	  <!-- <block type="arduinobox_setDigitalLED"> -->
+        <!-- <value name="DAT"> -->
+          <!-- <shadow type="math_number"> -->
+            <!-- <field name="NUM">0</field> -->
+          <!-- </shadow> -->
+        <!-- </value> -->
+	  <!-- </block> -->
+	<!-- </category> -->
+	<category id="blueBit" name="blueBit模块" colour="200">
+		<block type="blueBit_IR">
+			<value name="PIN">
+				<shadow type="blueBit_digital">
+					<field name="PIN">7</field>
+				</shadow>
+			</value>
+		</block>
+	</category>	
+</category>

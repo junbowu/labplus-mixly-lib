@@ -1,0 +1,1 @@
+copy *.js labplus.blocks.mixly.min.js /b

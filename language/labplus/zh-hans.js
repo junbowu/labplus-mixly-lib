@@ -1,0 +1,200 @@
+/* 'use strict';
+goog.provide('Blockly.Msg.zh.hans');
+goog.require('Blockly.Msg');
+MSG = MSG.push(catDuinoplusBox: "duinoplusbox"); */
+
+//duinoplus
+Blockly.Msg.DUINOPLUS_TEMPERATURE='温度（℃）';
+Blockly.Msg.DUINOPLUS_LIGHT='光线（模拟）';
+Blockly.Msg.DUINOPLUS_SOUND='声音（模拟）';
+Blockly.Msg.DUINOPLUS_HUMANINFRARED='人体红外（数字）';
+Blockly.Msg.DUINOPLUS_DIGITALLED='数码管';
+Blockly.Msg.DUINOPLUS_DISPLAY='显示';
+Blockly.Msg.DUINOPLUS_WHITCH_NUM='第';
+Blockly.Msg.DUINOPLUS_WHITCH_NUM1='位 显示';
+Blockly.Msg.DUINOPLUS_SLIDING='滑杆（模拟）';
+Blockly.Msg.DUINOPLUS_LED='LED灯';
+Blockly.Msg.DUINOPLUS_BUTTON='按钮（数字）';
+Blockly.Msg.DUINOPLUS_BUZZER='蜂鸣器';
+Blockly.Msg.DUINOPLUS_STAT='设为';
+Blockly.Msg.DUINOPLUS_ON='开';
+Blockly.Msg.DUINOPLUS_OFF='关';
+Blockly.Msg.DUINOPLUS_FREQUENCY='频率';
+Blockly.Msg.DUINOPLUS_DURATION='持续时间';
+Blockly.Msg.DUINOPLUS_DIGITALLED='数码管';
+Blockly.Msg.DUINOPLUS_DIGITALLED_SETUP='初始化 数码管';
+Blockly.Msg.DUINOPLUS_DIGITALLED_DISPLAY='显示';
+Blockly.Msg.DUINOPLUS_DIGITALLED_CS='CS';
+Blockly.Msg.DUINOPLUS_DIGITALLED_DI='DI';
+Blockly.Msg.DUINOPLUS_DIGITALLED_CLK='CLK';
+Blockly.Msg.DUINOPLUS_DOT='显示小数点';
+Blockly.Msg.DUINOPLUS_TRUE='是';
+Blockly.Msg.DUINOPLUS_FALSE='否';
+Blockly.Msg.DUINOPLUS_CLEAR='清除数码管';
+Blockly.Msg.DUINOPLUS_BTN_UP='上';
+Blockly.Msg.DUINOPLUS_BTN_DOWN='下';
+Blockly.Msg.DUINOPLUS_BTN_LEFT='左';
+Blockly.Msg.DUINOPLUS_BTN_RIGHT='右';
+Blockly.Msg.DUINOPLUS_BTN_MID='中';
+Blockly.Msg.DUINOPLUS_MATRIXLED_SETUP='初始化LED点阵';
+Blockly.Msg.DUINOPLUS_MATRIXLED='LED点阵';
+Blockly.Msg.PIXEL_X='点 x';
+Blockly.Msg.PIXEL_Y='y';
+Blockly.Msg.PIXEL_ON='亮';
+Blockly.Msg.PIXEL_OFF='灭';
+Blockly.Msg.PIXEL_LINE='第';
+Blockly.Msg.PIXEL_LINE1='行';
+Blockly.Msg.PIXEL_LINE2='列';
+Blockly.Msg.PIXEL_CLEAR='清除屏幕';
+Blockly.Msg.DUINOPLUS_NOTE='音调';
+
+
+
+Blockly.Cal_Reverse = "反转";
+Blockly.Cal_Value = "数值";
+Blockly.Cal_NumLen = "位数";
+
+//.....FOR JOINT.....INPUT AND OUTPUT
+Blockly.Msg.JOINT_BUTTON_VALUE = Blockly.Msg.JOINTLITE_BUTTON_VALUE ="按键值";
+Blockly.Msg.JOINT_TLITSWITCH_VALUE = "倾斜开关值";
+Blockly.Msg.JOINT_INFRARED_VALUE = "红外接近开关值";
+Blockly.Msg.JOINT_SILDESWITCH_VALUE = "拨动开关值";
+Blockly.Msg.JOINT_MOTIONTRIGGER_VALUE = "人体感应触发器值";
+Blockly.Msg.JOINT_SOUNDTRIGGER_VALUE = "声音触发器值";
+Blockly.Msg.JOINT_TOUCHBUTTON_VALUE = "触摸按键值";
+Blockly.Msg.JOINT_MAGNETICSWITCH_VALUE = "磁力开关值";
+Blockly.Msg.JOINT_FIRETRIGGER_VALUE = "火焰触发器值";
+Blockly.Msg.JOINT_LIGHTSENSOR_VALUE = "光线传感器值";
+Blockly.Msg.JOINT_SLIDINGPOTENTIOMETER_VALUE = "直滑电位器值";
+Blockly.Msg.JOINT_ROTATINGPOTENTIOMETER_VALUE = "旋转电位器值";
+Blockly.Msg.JOINT_TEMPSENSOR_VALUE = "温度传感器值";
+Blockly.Msg.JOINT_WATERSENSOR_VALUE = "水分传感器值";
+Blockly.Msg.JOINT_HUMTEMPSENSOR_VALUE = "温湿度传感器值";
+Blockly.Msg.JOINT_ULTRASONICSENSOR_VALUE0 = "超声波传感器值";
+Blockly.Msg.JOINT_ULTRASONICSENSOR_VALUE = "超声波传感器值(旧版本)";
+Blockly.Msg.JOINT_LIMITSWITCH_VALUE = "限位开关值";
+Blockly.Msg.JOINT_LOWLIGHTSENSOR_VALUE = "灵敏光线传感器值";
+Blockly.Msg.JOINT_RESISTANCESENSOR_VALUE = "阻性传感器值";
+Blockly.Msg.JOINT_SET_BUZZER = "设置蜂鸣器";
+Blockly.Msg.JOINT_SET_LED = "设置LED灯";
+Blockly.Msg.JOINT_SET_LEDSTRIPLED = "设置LED灯条";
+Blockly.Msg.JOINT_SET_VIBRATIONMOTOR = "设置振动马达";
+Blockly.Msg.JOINT_SET_DCMOTOR = "设置直流电机";
+Blockly.Msg.JOINT_SET_RGBLED = "设置RGB灯";
+Blockly.Msg.JOINT_SET_ELECTROMAGNET = "设置电磁铁";
+Blockly.Msg.JOINT_SET_RELAY = "设置继电器";
+Blockly.Msg.JOINT_SET_FAN = "设置风扇";
+Blockly.Msg.JOINT_SET_MOTOR = "设置马达"
+Blockly.Msg.JOINT_SET_RECON = "激活录放器";
+Blockly.Msg.JOINT_SET_RECOFF = "关闭录放器";
+Blockly.Msg.JOINT_SET_DIGITON = "设置数码管值";
+Blockly.Msg.JOINT_SET_DIGITOFF = "关闭数码管";
+Blockly.Msg.JOINT_SET_MATRIXON = "设置点阵";
+//20170313
+Blockly.Msg.JOINT_SET = "设置";
+Blockly.Msg.JOINT_SET_MIDI1 = "MIDI模块旋律音色为";
+Blockly.Msg.JOINT_SET_MIDI2 = "MIDI模块打击乐为";
+Blockly.Msg.JOINT_PLAYNOTE = "MIDI模块播放音调";
+Blockly.Msg.JOINT_GET_COLOR_SENSOR = "激活颜色传感器并记录颜色";
+Blockly.Msg.JOINT_RETURN_HSV = "HSV颜色";
+Blockly.Msg.JOINT_RETURN_RGB = "RGB颜色";
+Blockly.Msg.JOINT_STOPPLAYMIDI = "停止播放MIDI模块";
+Blockly.Msg.JOINT_SETLCDNUM = "设置LCD显示数字";
+Blockly.Msg.JOINT_SETLCDTIME = "设置LCD显示时间";
+Blockly.Msg.JOINT_COLSELCD = "关闭LCD显示";
+Blockly.Msg.JOINT_MP3PLAY = "MP3模块播放";
+Blockly.Msg.JOINT_MP3MENU = "第";
+Blockly.Msg.JOINT_MP3MUSIC = "首音乐";
+Blockly.Msg.JOINT_MP3LOOP = "MP3模块重复播放";
+Blockly.Msg.JOINT_PAUSE = "暂停";
+Blockly.Msg.JOINT_STOP = "停止";
+Blockly.Msg.JOINT_PLAY = "播放";
+Blockly.Msg.JOINT_NEXT = "下一首";
+Blockly.Msg.JOINT_MP3SET = "设置MP3模块";
+Blockly.Msg.JOINT_PREVIOUS = "上一首";
+Blockly.Msg.JOINT_MP3STAT = "Mp3模块状态为";
+Blockly.Msg.JOINT_MIDI_PIANO = "平台钢琴"; //Acoustic Grand Piano
+Blockly.Msg.JOINT_Vibraphone = "抖音琴"; //Vibraphone
+Blockly.Msg.JOINT_MIDI_ORGAN = "音栓风琴"; //Drawbar Organ
+Blockly.Msg.JOINT_Acoustic_Guitar = "木吉他"; //Acoustic Guitar
+Blockly.Msg.JOINT_Electric_Guitar = "电吉他"; //Electric Guitar
+Blockly.Msg.JOINT_Acoustic_Bass = "民谣贝斯";  //Acoustic Bass
+Blockly.Msg.JOINT_String_Ensemble = "弦乐合奏";  //String Ensemble
+Blockly.Msg.JOINT_Violin = "小提琴";  //Violin
+Blockly.Msg.JOINT_Trumpet = "小号";  //Trumpet
+Blockly.Msg.JOINT_Sax = "萨克斯";  //Sax
+Blockly.Msg.JOINT_Flute = "长笛";  //Flute
+Blockly.Msg.JOINT_Steel_Drums = "钢鼓";  //Steel Drums
+Blockly.Msg.JOINT_Lead = "合成音主旋律";  //Lead
+Blockly.Msg.JOINT_Pad = "合成音衬底";  //Pad
+Blockly.Msg.JOINT_Bass_Drum = "大鼓";  //Bass Drum
+Blockly.Msg.JOINT_Snare_Drum = "小鼓";  //Snare Drum
+Blockly.Msg.JOINT_Closed_Hi_hat = "闭合开合钹";  //Closed Hi-hat
+Blockly.Msg.JOINT_Open_Hi_hat = "开放开合钹";  //Open Hi-hat
+Blockly.Msg.JOINT_Low_Tom = "低音筒鼓";  //Low Tom
+Blockly.Msg.JOINT_High_Tom = "高音筒鼓";  //High Tom
+Blockly.Msg.JOINT_Tambourine = "铃鼓";  //Tambourine
+Blockly.Msg.JOINT_Crash_Cymbal = "强音钹";  //Crash Cymbal
+Blockly.Msg.JOINT_Ride_Cymbal = "打点钹";  //Ride Cymbal
+Blockly.Msg.JOINT_Mute_High_Conga = "高音康加鼓";  //Mute High Conga
+Blockly.Msg.JOINT_Low_Conga = "低音康加鼓";  //Low Conga
+Blockly.Msg.JOINT_Maracas = "沙锤";  //Maracas
+Blockly.Msg.JOINT_Claves = "击木";  //Claves
+Blockly.Msg.JOINT_MP3STATTIP = "MP3模块设备状态 0：播放停止 1：播放 2：暂停";
+Blockly.Msg.JOINT_RGBSTRIP_DEFPIN = "定义RGB灯条引脚为";
+Blockly.Msg.JOINT_RGBSTRIP_AMOUNT = "，总数为";
+Blockly.Msg.JOINT_RGBSTRIP_SETPIN = "设置RGB灯条引脚";
+Blockly.Msg.JOINT_RGBSTRIP_NUMBER = "第";
+Blockly.Msg.JOINT_RGBSTRIP_RED = "个灯的颜色为红";
+Blockly.Msg.JOINT_RGBSTRIP_GREEN = "绿";
+Blockly.Msg.JOINT_RGBSTRIP_BLUE = "蓝";
+Blockly.Msg.JOINT_RGBSTRIP_SEND = "发送并刷新RGB灯条";
+Blockly.Msg.JOINT_RGBSTRIP_PALETTE = "个灯的颜色为";
+Blockly.Msg.JOINT_COORDINATE = "坐标";
+Blockly.Msg.JOINT_STATUS = "状态";
+Blockly.Msg.JOINT_SET_COOROFCHAR = "设置字符起始坐标";
+Blockly.Msg.JOINT_DISPLAY_CHAR = "显示字符";
+Blockly.Msg.JOINT_CLEAR_MATRIX = "清空点阵";
+Blockly.Msg.JOINT_SEND_MATRIX = "发送并刷新点阵";
+Blockly.Msg.JOINT_MP3SETVOLUME = "设置MP3模块音量为";
+Blockly.Msg.JOINT_SETTIME = "设置模块时间为";
+Blockly.Msg.JOINT_HOUR = "时";
+Blockly.Msg.JOINT_MINUTE = "分";
+Blockly.Msg.JOINT_SECOND = "秒";
+Blockly.Msg.JOINT_WEEK_DAY = "星期";
+Blockly.Msg.JOINT_DAY = "日";
+Blockly.Msg.JOINT_MONTH = "月";
+Blockly.Msg.JOINT_YEAR = "年";
+Blockly.Msg.JOINT_GETTIME = "获取时间";
+Blockly.Msg.JOINT_VOLUME = "音量";
+//.....JOINT END.....
+
+
+//.....FOR JOINTLITE.....
+Blockly.Msg.JOINTLITE_INPUT = "输入";
+Blockly.Msg.JOINTLITE_INPUTR = "输入分支(○)";
+Blockly.Msg.JOINTLITE_INPUTL = "输入分支(●)";
+Blockly.Msg.JOINTLITE_OUTPUT = "输出";
+Blockly.Msg.JOINTLITE_OUTPUTR = "输出分支(○)";
+Blockly.Msg.JOINTLITE_OUTPUTL = "输出分支(●)";
+//.....JOINTLITE END.....
+
+//20170109.....FOR GLOBAL.....
+Blockly.Msg.MATRIX_NAME = "点阵名称";
+Blockly.Msg.TEMPERATURE = "温度";
+Blockly.Msg.HUMILITY = "湿度";
+Blockly.Msg.SECOND = "秒";
+Blockly.Msg.TURN_ON = "开";
+Blockly.Msg.TURN_OFF = "关";
+Blockly.Msg.RED = "红"; 
+Blockly.Msg.GREEN = "绿"; 
+Blockly.Msg.BLUE = "蓝"; 
+Blockly.Msg.SPEED = "速率";
+Blockly.Msg.CLOCKWISE = "顺时针";
+Blockly.Msg.ANTICLOCKWISE = "逆时针";
+Blockly.Msg.STOP = "停止";
+Blockly.Msg.PLAY_RECORD = "播放录音";
+Blockly.Msg.START_RECORD = "开始录音";
+Blockly.Msg.EEPROMADDRW = "写入EEPROM地址";
+Blockly.Msg.EEPROMVALUE = "数值";
+Blockly.Msg.EEPROMADDRR = "读取EEPROM地址";
