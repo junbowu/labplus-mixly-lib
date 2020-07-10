@@ -1,0 +1,388 @@
+<!-- type="company" block="block/labplus.js" 
+	generator="generator/labplus.js" 
+	lib="labplus_lib" 
+	hardware=""   
+	media="media/labplus" 
+	language="language/labplus" -->
+
+<script type="text/javascript" src="../../blocks/company/labplus.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/labplus.js"></script>
+<category id="Labplus" name="Labplus" colour="120">
+	<!-- 创客中级实验箱 -->
+	<category id="catDuinoplusBox" name="创客中级实验箱" colour="160">
+		<block type="duinoplus_temperature"></block>
+		<block type="duinoplus_light"></block>
+		<block type="duinoplus_sound"></block>
+		<block type="duinoplus_sliding"></block>
+		<block type="duinoplus_humaninfrared"></block>
+		<block type="duinoplus_button"></block>
+		<block type="duinoplus_cal_reverse">
+			<value name="Num">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="NumLen">
+				<shadow type="math_number">
+					<field name="NUM">8</field>
+				</shadow>
+			</value>	
+		</block>
+		<block type="duinoplus_led">
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">255</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer">
+		</block>
+		<block type="duinoplus_buzzer2">
+			<value name="DURATION">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer3">
+			<value name="FREQUENCY">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+			<value name="DURATION">
+				<shadow type="math_number">
+					<field name="NUM">1000</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_buzzer4"></block>	
+		<block type="duinoplus_digitalled_init"></block> 
+		<block type="duinoplus_digitalled_display">
+			<value name="DIGITAL_LED_NUM1">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block> 
+		<block type="duinoplus_digitalled_display1">
+			<value name="DIGITAL_LED_NUM">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_digitalled_clear">		
+		</block>
+		<block type="duinoplus_matrix_init"></block>
+		<block type="duinoplus_matrix_draw_pixel">
+			<value name="PIXEL_X">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="PIXEL_Y">
+				<shadow type="matrix_x_y">
+				</shadow>
+			</value>
+		</block>
+		<block type="duinoplus_matrix_display_string">
+			<value name="PIXEL_X">
+				<shadow type="matrix_x_y">
+				</shadow>
+			</value>
+			<value name="PIXEL_Y">
+				<shadow type="matrix_x_y">
+				</shadow>
+			</value>
+			<value name="CHAR_VAR">
+				<shadow type="text">
+					<field name="TEXT">A</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_draw_line">
+			<value name="LINE">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="LINE_DAT">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_draw_column">
+			<value name="LINE">
+				<shadow type="matrix_x_y"></shadow>
+			</value>
+			<value name="LINE_DAT">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>		
+		</block>
+		<block type="duinoplus_matrix_clear">		
+		</block>
+	</category>
+	<!-- blue:bit模块 -->
+    <category id="catbluebit" name="Blue:bit模块" colour="160">
+		<category id="catSensor" name="传感器" colour="160">
+			<block type="bluebit_get_analog">
+				<value name="PIN">
+					<shadow type="pins_analog">
+						<field name="PIN"></field>
+					</shadow>
+				</value>`
+			</block>
+			<block type="bluebit_get_digital">
+				<value name="PIN">
+					<shadow type="pins_digital">
+						<field name="PIN"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_get_ntc_temp">	</block>
+			<block type="bluebit_get_lm35_temp"> </block>	
+			<block type="ds18b20_1">
+				<value name="PIN">
+					<shadow type="pins_digital"></shadow>
+				</value>
+			</block>
+			<block type="bluebit_get_ambient_light_val"></block>
+			<block type="bluebit_get_four_button">
+				<value name="PIN">
+					<shadow type="pins_analog">
+						<field name="PIN"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_get_ultrasoni_val"></block>
+			<block type="bluebit_get_sht20_val"></block>
+			<block type="bluebit_get_I2C_light"></block>
+			<block type="bluebit_get_I2C_current"></block>
+			<block type="bluebit_get_I2C_voltage"></block>
+			<block type="bluebit_get_I2C_pH"></block>
+			<block type="bluebit_get_I2C_airPressure"></block>
+			<block type="bluebit_get_I2C_magnetic"></block>
+			<block type="bluebit_get_I2C_conductivity"></block>
+			<block type="bluebit_get_I2C_PhotoelectricGate"></block>
+			<block type="bluebit_get_I2C_force"></block>
+		</category>
+		<category id="catActor" name="执行器" colour="160">
+			<block type="bluebit_set_digital">
+				<value name="PIN">
+					<shadow type="pins_digital">
+						<field name="PIN"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_set_DCmotor">
+				<value name="SPEED">
+					<shadow type="math_number">
+						<field name="NUM">255</field>
+					</shadow>
+				</value>
+			</block>
+		</category>
+		<category id="catPlayer" name="播放器" colour="160">
+			<block type="bluebit_initMp3"> </block>
+			<block type="bluebit_playMp3">
+				<value name="Num">
+					<shadow type="math_number">
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_loopMp3">
+				<value name="Num">
+					<shadow type="math_number">
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_setMp3"></block>
+			<block type="bluebit_setMp3Volume">
+				<value name="VOL">
+					<shadow type="math_number">
+						<field name="NUM">10</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_setMp3Stat"></block>
+			<block type="bluebit_midi_init">
+				<value name="VOL">
+					<shadow type="math_number">
+						<field name="NUM">150</field>
+					</shadow>
+				</value>	
+			</block>
+			<block type="bluebit_midi_set1"></block>
+			<block type="bluebit_midi_set2"></block>
+			<block type="bluebit_midi_playNote">
+				<value name="VELOCITY">
+					<shadow type="math_number">
+						<field name="NUM">127</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_midi_stopPlay"></block>
+			<block type="bluebit_buzzer">
+				<value name="PIN">
+					<shadow type="pins_digital"></shadow>
+				</value>
+			</block>
+			<block type="bluebit_buzzer2">
+				<value name="PIN">
+					<shadow type="pins_digital"></shadow>
+				</value>
+				<value name="DURATION">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_buzzer3">
+				<value name="PIN">
+					<shadow type="pins_digital"></shadow>
+				</value>
+				<value name="FREQUENCY">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+				</value>
+				<value name="DURATION">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="bluebit_buzzer4">
+				<value name="PIN">
+					<shadow type="pins_digital"></shadow>
+				</value>
+			</block>
+		</category>
+		<category id="catDisplay" name="显示器" colour="160">
+			<!-- 数码管开始 -->
+			<!-- 	<block type="bluebit_TM1650_init"></block> -->
+			<block type="bluebit_TM1650_cmd"></block>
+			<block type="bluebit_TM1650_setDigit_Int">
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">10</field>
+						</shadow>
+					</value>
+			</block>
+			<block type="bluebit_TM1650_setDigit_Char">
+				<value name="Char">
+				<shadow type="text">
+					<field name="TEXT">ABCD</field>
+				</shadow>
+				</value>
+			</block>
+			<block type="bluebit_TM1650_setDot">
+				<value name="POS">
+					<shadow type="pins_digital">
+						<field name="POS"></field>
+					</shadow>
+				</value>
+				<value name="ON">
+					<shadow type="pins_digital">
+						<field name="ON"></field>
+					</shadow>
+				</value>
+			</block>
+			<!--点阵-->
+			<block type="bluebit_matrix_init"></block>
+			<block type="bluebit_matrix_draw_pixel">
+				<value name="PIXEL_X">
+				<shadow type="matrix_x_y"></shadow>
+				</value>
+				<value name="PIXEL_Y">
+				<shadow type="matrix_x_y"></shadow>
+				</value>		
+			</block>
+			<block type="bluebit_matrix_display_string">
+				<value name="PIXEL_X">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+				</value>
+				<value name="PIXEL_Y">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+				</value>
+				<value name="CHAR_VAR">
+				<shadow type="text">
+					<field name="TEXT">A</field>
+				</shadow>
+				</value>		
+			</block>
+			<block type="bluebit_matrix_cmd"></block>
+			<!--彩灯-->
+			<block type="bluebit_initPixel">
+				<value name="n"><shadow type="math_number"><field name="NUM">5</field></shadow></value>
+				<value name="pin"><shadow type="math_number"><field name="NUM">5</field></shadow></value>		
+			</block>
+			<block type="bluebit_setPixelAndShow">
+				<value name="n"><shadow type="math_number"><field name="NUM">5</field></shadow></value>
+				<value name="r"><shadow type="math_number"><field name="NUM">50</field></shadow></value>
+				<value name="g"><shadow type="math_number"><field name="NUM">50</field></shadow></value>
+				<value name="b"><shadow type="math_number"><field name="NUM">50</field></shadow></value>		
+			</block>
+			<block type="bluebit_lcd_init"> </block>
+			<block type="bluebit_lcd_print2">
+				<value name="row">
+					<shadow type="math_number">
+						<field name="NUM">1</field>
+					</shadow>
+				</value>
+				<value name="column">
+					<shadow type="math_number">
+						<field name="NUM">1</field>
+					</shadow>
+				</value>
+				<value name="TEXT">
+					<block type="text">
+						<field name="TEXT"></field>
+					</block>
+				</value>
+			</block>
+			<block type="bluebit_lcd_cmd"></block>
+		</category>
+		<category id="catCommunication" name="通信" colour="160">
+			<!-- 红外/蓝牙串口 -->
+			<block type="bluebit_serial_softserial">
+				<value name="TX">
+				<shadow type="pins_digital"></shadow>
+				</value>
+				<value name="RX">
+				<shadow type="pins_digital"></shadow>
+				</value>
+			</block>
+			<block type="bluebit_serial_write"></block>
+			<block type="bluebit_serial_available"></block>
+			<block type="bluebit_serial_println"></block>
+			<block type="bluebit_serial_flush"></block>
+			<!-- 扩展端口开始 -->
+			<!-- <block type="bluebit_extIOInit"> -->
+				<!-- <value name="PIN"> -->
+					<!-- <shadow type="pins_digital"> -->
+						<!-- <field name="PIN"></field> -->
+					<!-- </shadow> -->
+				<!-- </value> -->
+			<!-- </block> -->
+			<!-- <block type="bluebit_readExtendedIO"> -->
+				<!-- <value name="PIN"> -->
+					<!-- <shadow type="pins_digital"> -->
+						<!-- <field name="PIN"></field> -->
+					<!-- </shadow> -->
+				<!-- </value> -->
+			<!-- </block> -->
+			<!-- <block type="bluebit_writeExtendedIO"> -->
+				<!-- <value name="PIN"> -->
+					<!-- <shadow type="pins_digital"> -->
+						<!-- <field name="PIN"></field> -->
+					<!-- </shadow> -->
+				<!-- </value> -->
+			<!-- </block> -->
+		</category>
+	</category>	
+</category>

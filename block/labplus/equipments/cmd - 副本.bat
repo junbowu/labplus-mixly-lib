@@ -1,1 +1,0 @@
-copy *.js merge.js /b

@@ -1,1 +1,0 @@
-copy *.js labplus.generators.mixly.min.js /b
