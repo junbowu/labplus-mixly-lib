@@ -597,10 +597,10 @@ Blockly.Arduino.bluebit_set_DCmotor = function (){
 
 /* blue:bit mp3 */
 Blockly.Arduino.bluebit_initMp3 = function() {
-	Blockly.Arduino.definitions_['include_kt540b'] = '#include "BluebitKt540b.h"';
+	Blockly.Arduino.definitions_['define_kt540b'] = '#include "BluebitKt540b.h"';
 	var dropdown_rx = this.getFieldValue('PIN_RX');
 	var dropdown_tx = this.getFieldValue('PIN_TX');
-	Blockly.Arduino.definitions_['define_bluebit_mp3_obj'] = 'Kt540bClass mp3Play(' + dropdown_rx + ', ' + dropdown_tx + ');\n';
+	Blockly.Arduino.definitions_['define_kt540b_obj'] = 'Kt540bClass mp3Play(' + dropdown_rx + ', ' + dropdown_tx + ');\n';
 	Blockly.Arduino.setups_['setup_mp3_begin'] = 'mp3Play.begin();\n';
 	return "";
 };
@@ -641,7 +641,7 @@ Blockly.Arduino.bluebit_setMp3Volume = function() {
 	return code;
 };
 
-Blockly.Arduino.joint_getMp3Stat = function() {
+Blockly.Arduino.bluebit_setMp3Stat = function() {
 	var var_stat = this.getFieldValue('STAT');
 	var code = '(mp3Play.getPlayState() == ' + var_stat + ')';
 	return [code, Blockly.Arduino.ORDER_ATOMIC];
