@@ -447,8 +447,8 @@ Blockly.Blocks.duinoplus_matrix_clear={
 /* blue:bit 模拟输入类传感器*/
 var ANALOGREAD_MOD=[[Blockly.BLUEBIT_SOUND_MODULE,"AIN1"],[Blockly.BLUEBIT_LIGHT_MODULE,"AIN2"],
 	                            [Blockly.BLUEBIT_WATER_MODULE,"AIN3"],[Blockly.BLUEBIT_SOIL_MODULE,"AIN4"],
-	                            [Blockly.BLUEBIT_ROTATION_MODULE,"AIN5"],  
-								[Blockly.BLUEBIT_JOYSTICK_MODULE,"AIN6"]   ];
+				    [Blockly.BLUEBIT_ROTATION_MODULE,"AIN5"],[Blockly.BLUEBIT_JOYSTICK_MODULE,"AIN6"], 
+			            [Blockly.BLUEBIT_SLIDER_MODULE,"AIN7"]    ];
 								
 Blockly.Blocks.bluebit_get_analog = {
 	init: function() {
@@ -471,7 +471,8 @@ var DIGITALREAD_MOD=[[Blockly.BLUEBIT_SOUND_MODULE,"DIN1"],[Blockly.BLUEBIT_LIGH
 	                       [Blockly.BLUEBIT_BUTTON_MODULE,"DIN7"],[Blockly.BLUEBIT_VIBRATION_MODULE,"DIN8"],
 	                       [Blockly.BLUEBIT_RFID_MODULE,"DIN9"],[Blockly.BLUEBIT_FINGER_MODULE,"DIN10"],
 	                       [Blockly.BLUEBIT_PIR_MODULE,"DIN11"],   [Blockly.BLUEBIT_MAGNETIC_MODULE,"DIN12"],
-						   [Blockly.BLUEBIT_LINE_FOLLOWER_MODULE,"DIN13"],[Blockly.BLUEBIT_LIMIT_SWITCH, "DIN14"]
+			       [Blockly.BLUEBIT_LINE_FOLLOWER_MODULE,"DIN13"],[Blockly.BLUEBIT_LIMIT_SWITCH, "DIN14"],
+		               [Blockly.BLUEBIT_SLIDER_MODULE, "DIN15"]
 						   ];
 						    
 Blockly.Blocks.bluebit_get_digital = {
