@@ -380,7 +380,7 @@ Blockly.BLUEBIT_MAXTRIX_DISPLAY1  = " 行 显示 ";
 Blockly.BLUEBIT_MATRIX_STR1 = "LED点阵";
 Blockly.BLUEBIT_LIMIT_SWITCH = "限位开关";
 Blockly.BLUEBIT_LABMP_STRING = "满天星灯带";
-
+Blockly.BLUEBIT_SERIAL_READ = "获取数据";
 
 //中级实验箱2
 Blockly.Duinoplusbox2_INIT_MP3 = "MP3模块初始化";
