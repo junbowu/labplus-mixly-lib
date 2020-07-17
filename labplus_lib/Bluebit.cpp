@@ -206,7 +206,7 @@ float readCodesI2C(int address)
     reading = Wire.read();  // receive high byte (overwrites previous reading)
     reading = reading << 8;    // shift high byte to be high 8 bits
     reading |= Wire.read(); // receive low byte as lower 8 bits
-    Serial.println(reading);   // print the reading
+    //Serial.println(reading);   // print the reading
     }
    delay(100);
     
