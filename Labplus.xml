@@ -361,6 +361,7 @@
 			<block type="bluebit_serial_available"></block>
 			<block type="bluebit_serial_println"></block>
 			<block type="bluebit_serial_flush"></block>
+			<block type="bluebit_serial_read"></block>
 			<!-- 扩展端口开始 -->
 			<!-- <block type="bluebit_extIOInit"> -->
 				<!-- <value name="PIN"> -->
