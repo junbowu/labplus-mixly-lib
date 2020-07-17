@@ -14,6 +14,7 @@ Blockly.Blocks.labplus.HUE5 = 210;
 Blockly.Blocks.labplus.HUE6 = 250;
 
 /* ********************** 创客中级实验箱 ****************************/ 
+/* 测试软件上传 */
 /* 红外测温 MLX90615 */
 Blockly.Blocks.duinoplus_temperature = {
   init: function() {
