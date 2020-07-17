@@ -629,6 +629,7 @@ Blockly.BLUEBIT_MAXTRIX_DISPLAY1  = " row display ";
 Blockly.BLUEBIT_MATRIX_STR1 = "LED lattice";
 Blockly.BLUEBIT_LIMIT_SWITCH = "Limit switch";
 Blockly.BLUEBIT_LABMP_STRING = "Sky star lamp string"
+Blockly.BLUEBIT_SERIAL_READ = "Get data";
 
 //中级实验箱2
 Blockly.Duinoplusbox2_INIT_MP3 = "initialize MP3";
