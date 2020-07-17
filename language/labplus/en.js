@@ -505,6 +505,7 @@ Blockly.TEMPERATURE = " temperature";
 Blockly.HUMILITY = "humidity";
 Blockly.BLUEBIT_SOUND_MODULE = "sound";
 Blockly.BLUEBIT_LIGHT_MODULE = "simulated light";
+Blockly.BLUEBIT_SLIDER_MODULE = "linear sliding potentiometer";
 Blockly.BLUEBIT_WATER_MODULE = "water level";
 Blockly.BLUEBIT_SOIL_MODULE =   "soil humidity";
 Blockly.BLUEBIT_ROTATION_MODULE = "rotational potentiometer";
