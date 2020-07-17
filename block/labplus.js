@@ -1240,6 +1240,17 @@ Blockly.Blocks.bluebit_serial_softserial = {
 	  this.setTooltip(Blockly.MIXLY_TOOLTIP_BLOCKGROUP_SERIAL_AVAILABLE);
 	}
   };
+  //获取数据
+  Blockly.Blocks.bluebit_serial_read = {
+	init: function() {
+		this.setColour(Blockly.Blocks.labplus.HUE5);
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown(serial_select), "serial_select")
+			.appendField(Blockly.BLUEBIT_SERIAL_READ);
+		this.setOutput(true, Boolean);
+		this.setTooltip(Blockly.MIXLY_TOOLTIP_BLOCKGROUP_SERIAL_AVAILABLE);
+	     }
+  };
   //换行打印
   Blockly.Blocks.bluebit_serial_println = {
 	 init: function() {
