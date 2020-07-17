@@ -886,6 +886,16 @@ Blockly.Arduino.bluebit_serial_softserial = function () {
 	 var code =serial_select+".available() > 0";
 	 return [code,Blockly.Arduino.ORDER_ATOMIC];
   };
+  //获取数据
+  Blockly.Arduino.bluebit_serial_read = function() {
+	var serial_select = this.getFieldValue('serial_select');
+	// if(Blockly.Arduino.setups_['setup_serial_'+serial_select+profile.default.serial]){
+	// }else{
+	  // Blockly.Arduino.setups_['setup_serial_'+serial_select+profile.default.serial] = serial_select+'.begin('+profile.default.serial+');';
+	// }
+	var code =serial_select+".read()";
+	return [code,Blockly.Arduino.ORDER_ATOMIC];
+  };
   //换行打印
   Blockly.Arduino.bluebit_serial_println = function() {
 	var serial_select = this.getFieldValue('serial_select');
