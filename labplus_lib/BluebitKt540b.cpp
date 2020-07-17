@@ -398,26 +398,24 @@ Others:
 ***************************************************************************/
 uint8_t Kt540bClass::getPlayState(void)
 {
-	uint8_t sendBuff[10];
+	uint8_t Buff[10];
 	uint8_t i;
 
-	sendBuff[0] = 0x7e;    //��ʼλ
-	sendBuff[1] = 0xff;    //�汾
-	sendBuff[2] = 0x06;    //����
-	sendBuff[3] = 0x42;     //����
-	sendBuff[4] = 0x00;    //�Ƿ�����0��������
-	sendBuff[5] = 0x00;   //�����ֽ�1
-	sendBuff[6] = 0x00;   //�����ֽ�2
-	sendBuff[7] = 0xfe;    //У����ֽ�
-	sendBuff[8] = 0xb9;    //У����ֽ�
-	sendBuff[9] = 0xef;     //����
-
-	for (i = 0; i < 10; i++)
-		Sserial.write(sendBuff[i]);
+	sendCmd(0x42, 0, 0);
 	while (!Sserial.available());
-	for (i = 0; i < 10; i++)
-		sendBuff[i] = Sserial.read();
-	return sendBuff[6];
+	while (Sserial.available())
+	{
+		if(0x7e == Sserial.read())
+		{
+			while (!Sserial.available());
+			if  (0xff == Sserial.read())
+			{
+				Sserial.readBytes(Buff, 8);
+			}
+			return Buff[4];
+		}		
+	}
+	return 0xff;
 }
 
 /***************************************************************************
