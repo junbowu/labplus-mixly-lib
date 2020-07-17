@@ -256,6 +256,7 @@ Blockly.TEMPERATURE = "温度";
 Blockly.HUMILITY = "湿度";
 Blockly.BLUEBIT_SOUND_MODULE = "声音";
 Blockly.BLUEBIT_LIGHT_MODULE = "模拟光线";
+Blockly.BLUEBIT_SLIDER_MODULE = "直滑电位器";
 Blockly.BLUEBIT_WATER_MODULE = "水位";
 Blockly.BLUEBIT_SOIL_MODULE =   "土壤湿度";
 Blockly.BLUEBIT_ROTATION_MODULE = "旋转电位器";
