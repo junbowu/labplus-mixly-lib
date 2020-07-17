@@ -653,7 +653,7 @@ Blockly.Arduino.bluebit_midi_init = function() {
 	var dropdown_rx = this.getFieldValue('PIN_RX');
 	var dropdown_tx = this.getFieldValue('PIN_TX');
 	var var_vol = Blockly.Arduino.valueToCode(this, 'VOL', Blockly.Arduino.ORDER_ATOMIC);	
-	Blockly.Arduino.definitions_['define_midi_obj'] = 'LdSetMidi midi = LdSetMidi(' + dropdown_rx + ',' + dropdown_tx + ');';
+	Blockly.Arduino.definitions_['include_SetMidi_obj'] = 'LdSetMidi midi = LdSetMidi(' + dropdown_rx + ',' + dropdown_tx + ');';
 	Blockly.Arduino.setups_['setup_midi_init'] = 'midi.begin();\n';
 	Blockly.Arduino.setups_['setup_midi_delay'] = 'delay(500);\n';
 	Blockly.Arduino.setups_['setup_midi_set_volume'] = 'midi.MidiChangeControl(0, 0x07, '+ var_vol+');\n';
